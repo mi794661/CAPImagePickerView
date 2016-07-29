@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'  
   s.requires_arc = true  
   s.source_files = "CAPImagePickerView/*.{h,m}"
-  s.resources    = "CAPImagePickerView/*.{png,xib,nib,bundle}"
+  s.resources    = "CAPImagePickerView/*.{png,xib,nib,bundle}" 
 end  
