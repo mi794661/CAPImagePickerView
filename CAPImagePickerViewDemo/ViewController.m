@@ -48,11 +48,11 @@
         return;
     }
     static int num = 0;
-    previewImageView.image = imagePickerView.selectedPhotos[num];
-    num ++;
     if (num >= imagePickerView.selectedPhotos.count) {
         num = 0;
     }
+    previewImageView.image = imagePickerView.selectedPhotos[num];
+    num ++;
 }
 
 - (void)didReceiveMemoryWarning {
