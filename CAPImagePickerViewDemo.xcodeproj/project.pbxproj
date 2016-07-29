@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C393AF2F1D4B430200A916CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF2E1D4B430200A916CB /* main.m */; };
+		C393AF321D4B430200A916CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF311D4B430200A916CB /* AppDelegate.m */; };
+		C393AF351D4B430200A916CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF341D4B430200A916CB /* ViewController.m */; };
+		C393AF381D4B430200A916CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C393AF361D4B430200A916CB /* Main.storyboard */; };
+		C393AF3A1D4B430200A916CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C393AF391D4B430200A916CB /* Assets.xcassets */; };
+		C393AF3D1D4B430200A916CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C393AF3B1D4B430200A916CB /* LaunchScreen.storyboard */; };
+		C393AF481D4B430200A916CB /* CAPImagePickerViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF471D4B430200A916CB /* CAPImagePickerViewDemoTests.m */; };
+		C393AF531D4B430200A916CB /* CAPImagePickerViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF521D4B430200A916CB /* CAPImagePickerViewDemoUITests.m */; };
+		C393AFA01D4B47C400A916CB /* AlbumAddBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C393AF861D4B47C400A916CB /* AlbumAddBtn@2x.png */; };
+		C393AFA11D4B47C400A916CB /* CAPImagePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF881D4B47C400A916CB /* CAPImagePickerView.m */; };
+		C393AFA21D4B47C400A916CB /* photo_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C393AF891D4B47C400A916CB /* photo_delete@2x.png */; };
+		C393AFA31D4B47C400A916CB /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF8C1D4B47C400A916CB /* TZAssetCell.m */; };
+		C393AFA41D4B47C400A916CB /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF8E1D4B47C400A916CB /* TZAssetModel.m */; };
+		C393AFA51D4B47C400A916CB /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF901D4B47C400A916CB /* TZImageManager.m */; };
+		C393AFA61D4B47C400A916CB /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C393AF911D4B47C400A916CB /* TZImagePickerController.bundle */; };
+		C393AFA71D4B47C400A916CB /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF931D4B47C400A916CB /* TZImagePickerController.m */; };
+		C393AFA81D4B47C400A916CB /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF951D4B47C400A916CB /* TZPhotoPickerController.m */; };
+		C393AFA91D4B47C400A916CB /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF971D4B47C400A916CB /* TZPhotoPreviewCell.m */; };
+		C393AFAA1D4B47C400A916CB /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF991D4B47C400A916CB /* TZPhotoPreviewController.m */; };
+		C393AFAB1D4B47C400A916CB /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF9B1D4B47C400A916CB /* TZVideoPlayerController.m */; };
+		C393AFAC1D4B47C400A916CB /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF9D1D4B47C400A916CB /* UIView+Layout.m */; };
+		C393AFAD1D4B47C400A916CB /* TZTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF9F1D4B47C400A916CB /* TZTestCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C393AF441D4B430200A916CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C393AF221D4B430200A916CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C393AF291D4B430200A916CB;
+			remoteInfo = CAPImagePickerViewDemo;
+		};
+		C393AF4F1D4B430200A916CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C393AF221D4B430200A916CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C393AF291D4B430200A916CB;
+			remoteInfo = CAPImagePickerViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C393AF2A1D4B430200A916CB /* CAPImagePickerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAPImagePickerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C393AF2E1D4B430200A916CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C393AF301D4B430200A916CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C393AF311D4B430200A916CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C393AF331D4B430200A916CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C393AF341D4B430200A916CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C393AF371D4B430200A916CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C393AF391D4B430200A916CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C393AF3C1D4B430200A916CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C393AF3E1D4B430200A916CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C393AF431D4B430200A916CB /* CAPImagePickerViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAPImagePickerViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C393AF471D4B430200A916CB /* CAPImagePickerViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAPImagePickerViewDemoTests.m; sourceTree = "<group>"; };
+		C393AF491D4B430200A916CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C393AF4E1D4B430200A916CB /* CAPImagePickerViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAPImagePickerViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C393AF521D4B430200A916CB /* CAPImagePickerViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAPImagePickerViewDemoUITests.m; sourceTree = "<group>"; };
+		C393AF541D4B430200A916CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C393AF861D4B47C400A916CB /* AlbumAddBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumAddBtn@2x.png"; sourceTree = "<group>"; };
+		C393AF871D4B47C400A916CB /* CAPImagePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPImagePickerView.h; sourceTree = "<group>"; };
+		C393AF881D4B47C400A916CB /* CAPImagePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPImagePickerView.m; sourceTree = "<group>"; };
+		C393AF891D4B47C400A916CB /* photo_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_delete@2x.png"; sourceTree = "<group>"; };
+		C393AF8B1D4B47C400A916CB /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		C393AF8C1D4B47C400A916CB /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		C393AF8D1D4B47C400A916CB /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		C393AF8E1D4B47C400A916CB /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		C393AF8F1D4B47C400A916CB /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		C393AF901D4B47C400A916CB /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		C393AF911D4B47C400A916CB /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		C393AF921D4B47C400A916CB /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		C393AF931D4B47C400A916CB /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		C393AF941D4B47C400A916CB /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		C393AF951D4B47C400A916CB /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		C393AF961D4B47C400A916CB /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		C393AF971D4B47C400A916CB /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		C393AF981D4B47C400A916CB /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		C393AF991D4B47C400A916CB /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		C393AF9A1D4B47C400A916CB /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		C393AF9B1D4B47C400A916CB /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		C393AF9C1D4B47C400A916CB /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		C393AF9D1D4B47C400A916CB /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		C393AF9E1D4B47C400A916CB /* TZTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTestCell.h; sourceTree = "<group>"; };
+		C393AF9F1D4B47C400A916CB /* TZTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTestCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C393AF271D4B430200A916CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C393AF401D4B430200A916CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C393AF4B1D4B430200A916CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C393AF211D4B430200A916CB = {
+			isa = PBXGroup;
+			children = (
+				C393AF851D4B47C400A916CB /* CAPImagePickerView */,
+				C393AF2C1D4B430200A916CB /* CAPImagePickerViewDemo */,
+				C393AF461D4B430200A916CB /* CAPImagePickerViewDemoTests */,
+				C393AF511D4B430200A916CB /* CAPImagePickerViewDemoUITests */,
+				C393AF2B1D4B430200A916CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C393AF2B1D4B430200A916CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C393AF2A1D4B430200A916CB /* CAPImagePickerViewDemo.app */,
+				C393AF431D4B430200A916CB /* CAPImagePickerViewDemoTests.xctest */,
+				C393AF4E1D4B430200A916CB /* CAPImagePickerViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C393AF2C1D4B430200A916CB /* CAPImagePickerViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C393AF301D4B430200A916CB /* AppDelegate.h */,
+				C393AF311D4B430200A916CB /* AppDelegate.m */,
+				C393AF331D4B430200A916CB /* ViewController.h */,
+				C393AF341D4B430200A916CB /* ViewController.m */,
+				C393AF361D4B430200A916CB /* Main.storyboard */,
+				C393AF391D4B430200A916CB /* Assets.xcassets */,
+				C393AF3B1D4B430200A916CB /* LaunchScreen.storyboard */,
+				C393AF3E1D4B430200A916CB /* Info.plist */,
+				C393AF2D1D4B430200A916CB /* Supporting Files */,
+			);
+			path = CAPImagePickerViewDemo;
+			sourceTree = "<group>";
+		};
+		C393AF2D1D4B430200A916CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C393AF2E1D4B430200A916CB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C393AF461D4B430200A916CB /* CAPImagePickerViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C393AF471D4B430200A916CB /* CAPImagePickerViewDemoTests.m */,
+				C393AF491D4B430200A916CB /* Info.plist */,
+			);
+			path = CAPImagePickerViewDemoTests;
+			sourceTree = "<group>";
+		};
+		C393AF511D4B430200A916CB /* CAPImagePickerViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C393AF521D4B430200A916CB /* CAPImagePickerViewDemoUITests.m */,
+				C393AF541D4B430200A916CB /* Info.plist */,
+			);
+			path = CAPImagePickerViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		C393AF851D4B47C400A916CB /* CAPImagePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				C393AF861D4B47C400A916CB /* AlbumAddBtn@2x.png */,
+				C393AF871D4B47C400A916CB /* CAPImagePickerView.h */,
+				C393AF881D4B47C400A916CB /* CAPImagePickerView.m */,
+				C393AF891D4B47C400A916CB /* photo_delete@2x.png */,
+				C393AF8A1D4B47C400A916CB /* TZImagePickerController */,
+				C393AF9E1D4B47C400A916CB /* TZTestCell.h */,
+				C393AF9F1D4B47C400A916CB /* TZTestCell.m */,
+			);
+			path = CAPImagePickerView;
+			sourceTree = "<group>";
+		};
+		C393AF8A1D4B47C400A916CB /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				C393AF8B1D4B47C400A916CB /* TZAssetCell.h */,
+				C393AF8C1D4B47C400A916CB /* TZAssetCell.m */,
+				C393AF8D1D4B47C400A916CB /* TZAssetModel.h */,
+				C393AF8E1D4B47C400A916CB /* TZAssetModel.m */,
+				C393AF8F1D4B47C400A916CB /* TZImageManager.h */,
+				C393AF901D4B47C400A916CB /* TZImageManager.m */,
+				C393AF911D4B47C400A916CB /* TZImagePickerController.bundle */,
+				C393AF921D4B47C400A916CB /* TZImagePickerController.h */,
+				C393AF931D4B47C400A916CB /* TZImagePickerController.m */,
+				C393AF941D4B47C400A916CB /* TZPhotoPickerController.h */,
+				C393AF951D4B47C400A916CB /* TZPhotoPickerController.m */,
+				C393AF961D4B47C400A916CB /* TZPhotoPreviewCell.h */,
+				C393AF971D4B47C400A916CB /* TZPhotoPreviewCell.m */,
+				C393AF981D4B47C400A916CB /* TZPhotoPreviewController.h */,
+				C393AF991D4B47C400A916CB /* TZPhotoPreviewController.m */,
+				C393AF9A1D4B47C400A916CB /* TZVideoPlayerController.h */,
+				C393AF9B1D4B47C400A916CB /* TZVideoPlayerController.m */,
+				C393AF9C1D4B47C400A916CB /* UIView+Layout.h */,
+				C393AF9D1D4B47C400A916CB /* UIView+Layout.m */,
+			);
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C393AF291D4B430200A916CB /* CAPImagePickerViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C393AF571D4B430200A916CB /* Build configuration list for PBXNativeTarget "CAPImagePickerViewDemo" */;
+			buildPhases = (
+				C393AF261D4B430200A916CB /* Sources */,
+				C393AF271D4B430200A916CB /* Frameworks */,
+				C393AF281D4B430200A916CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAPImagePickerViewDemo;
+			productName = CAPImagePickerViewDemo;
+			productReference = C393AF2A1D4B430200A916CB /* CAPImagePickerViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C393AF421D4B430200A916CB /* CAPImagePickerViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C393AF5A1D4B430200A916CB /* Build configuration list for PBXNativeTarget "CAPImagePickerViewDemoTests" */;
+			buildPhases = (
+				C393AF3F1D4B430200A916CB /* Sources */,
+				C393AF401D4B430200A916CB /* Frameworks */,
+				C393AF411D4B430200A916CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C393AF451D4B430200A916CB /* PBXTargetDependency */,
+			);
+			name = CAPImagePickerViewDemoTests;
+			productName = CAPImagePickerViewDemoTests;
+			productReference = C393AF431D4B430200A916CB /* CAPImagePickerViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C393AF4D1D4B430200A916CB /* CAPImagePickerViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C393AF5D1D4B430200A916CB /* Build configuration list for PBXNativeTarget "CAPImagePickerViewDemoUITests" */;
+			buildPhases = (
+				C393AF4A1D4B430200A916CB /* Sources */,
+				C393AF4B1D4B430200A916CB /* Frameworks */,
+				C393AF4C1D4B430200A916CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C393AF501D4B430200A916CB /* PBXTargetDependency */,
+			);
+			name = CAPImagePickerViewDemoUITests;
+			productName = CAPImagePickerViewDemoUITests;
+			productReference = C393AF4E1D4B430200A916CB /* CAPImagePickerViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C393AF221D4B430200A916CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = captain9911;
+				TargetAttributes = {
+					C393AF291D4B430200A916CB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C393AF421D4B430200A916CB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C393AF291D4B430200A916CB;
+					};
+					C393AF4D1D4B430200A916CB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C393AF291D4B430200A916CB;
+					};
+				};
+			};
+			buildConfigurationList = C393AF251D4B430200A916CB /* Build configuration list for PBXProject "CAPImagePickerViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C393AF211D4B430200A916CB;
+			productRefGroup = C393AF2B1D4B430200A916CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C393AF291D4B430200A916CB /* CAPImagePickerViewDemo */,
+				C393AF421D4B430200A916CB /* CAPImagePickerViewDemoTests */,
+				C393AF4D1D4B430200A916CB /* CAPImagePickerViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C393AF281D4B430200A916CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C393AF3D1D4B430200A916CB /* LaunchScreen.storyboard in Resources */,
+				C393AFA01D4B47C400A916CB /* AlbumAddBtn@2x.png in Resources */,
+				C393AF3A1D4B430200A916CB /* Assets.xcassets in Resources */,
+				C393AFA61D4B47C400A916CB /* TZImagePickerController.bundle in Resources */,
+				C393AFA21D4B47C400A916CB /* photo_delete@2x.png in Resources */,
+				C393AF381D4B430200A916CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C393AF411D4B430200A916CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C393AF4C1D4B430200A916CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C393AF261D4B430200A916CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C393AFAA1D4B47C400A916CB /* TZPhotoPreviewController.m in Sources */,
+				C393AFAD1D4B47C400A916CB /* TZTestCell.m in Sources */,
+				C393AFA41D4B47C400A916CB /* TZAssetModel.m in Sources */,
+				C393AFAB1D4B47C400A916CB /* TZVideoPlayerController.m in Sources */,
+				C393AFA51D4B47C400A916CB /* TZImageManager.m in Sources */,
+				C393AF351D4B430200A916CB /* ViewController.m in Sources */,
+				C393AFAC1D4B47C400A916CB /* UIView+Layout.m in Sources */,
+				C393AFA91D4B47C400A916CB /* TZPhotoPreviewCell.m in Sources */,
+				C393AFA81D4B47C400A916CB /* TZPhotoPickerController.m in Sources */,
+				C393AFA31D4B47C400A916CB /* TZAssetCell.m in Sources */,
+				C393AF321D4B430200A916CB /* AppDelegate.m in Sources */,
+				C393AF2F1D4B430200A916CB /* main.m in Sources */,
+				C393AFA11D4B47C400A916CB /* CAPImagePickerView.m in Sources */,
+				C393AFA71D4B47C400A916CB /* TZImagePickerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C393AF3F1D4B430200A916CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C393AF481D4B430200A916CB /* CAPImagePickerViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C393AF4A1D4B430200A916CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C393AF531D4B430200A916CB /* CAPImagePickerViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C393AF451D4B430200A916CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C393AF291D4B430200A916CB /* CAPImagePickerViewDemo */;
+			targetProxy = C393AF441D4B430200A916CB /* PBXContainerItemProxy */;
+		};
+		C393AF501D4B430200A916CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C393AF291D4B430200A916CB /* CAPImagePickerViewDemo */;
+			targetProxy = C393AF4F1D4B430200A916CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C393AF361D4B430200A916CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C393AF371D4B430200A916CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C393AF3B1D4B430200A916CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C393AF3C1D4B430200A916CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C393AF551D4B430200A916CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C393AF561D4B430200A916CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C393AF581D4B430200A916CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CAPImagePickerViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.captain9911.CAPImagePickerViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C393AF591D4B430200A916CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CAPImagePickerViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.captain9911.CAPImagePickerViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C393AF5B1D4B430200A916CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CAPImagePickerViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.captain9911.CAPImagePickerViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAPImagePickerViewDemo.app/CAPImagePickerViewDemo";
+			};
+			name = Debug;
+		};
+		C393AF5C1D4B430200A916CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CAPImagePickerViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.captain9911.CAPImagePickerViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAPImagePickerViewDemo.app/CAPImagePickerViewDemo";
+			};
+			name = Release;
+		};
+		C393AF5E1D4B430200A916CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CAPImagePickerViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.captain9911.CAPImagePickerViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CAPImagePickerViewDemo;
+			};
+			name = Debug;
+		};
+		C393AF5F1D4B430200A916CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CAPImagePickerViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.captain9911.CAPImagePickerViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CAPImagePickerViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C393AF251D4B430200A916CB /* Build configuration list for PBXProject "CAPImagePickerViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C393AF551D4B430200A916CB /* Debug */,
+				C393AF561D4B430200A916CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C393AF571D4B430200A916CB /* Build configuration list for PBXNativeTarget "CAPImagePickerViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C393AF581D4B430200A916CB /* Debug */,
+				C393AF591D4B430200A916CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C393AF5A1D4B430200A916CB /* Build configuration list for PBXNativeTarget "CAPImagePickerViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C393AF5B1D4B430200A916CB /* Debug */,
+				C393AF5C1D4B430200A916CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C393AF5D1D4B430200A916CB /* Build configuration list for PBXNativeTarget "CAPImagePickerViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C393AF5E1D4B430200A916CB /* Debug */,
+				C393AF5F1D4B430200A916CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C393AF221D4B430200A916CB /* Project object */;
+}
