@@ -63,7 +63,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     _originStatusBarStyle = [UIApplication sharedApplication].statusBarStyle;
-    [UIApplication sharedApplication].statusBarStyle = iOS7Later ? UIStatusBarStyleLightContent : UIStatusBarStyleBlackOpaque;
+    [UIApplication sharedApplication].statusBarStyle = iOS7Later ? UIStatusBarStyleLightContent : UIStatusBarStyleLightContent;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -270,7 +270,7 @@
         backButton.titleLabel.font = [UIFont systemFontOfSize:15];
         [backButton addTarget:self action:@selector(popViewControllerAnimated:) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem* backButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
-        backButtonItem.style = UIBarButtonItemStyleBordered;
+        backButtonItem.style = UIBarButtonItemStylePlain;
         self.topViewController.navigationItem.backBarButtonItem = backButtonItem;
         
         /**
