@@ -15,9 +15,7 @@
 		C393AF3D1D4B430200A916CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C393AF3B1D4B430200A916CB /* LaunchScreen.storyboard */; };
 		C393AF481D4B430200A916CB /* CAPImagePickerViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF471D4B430200A916CB /* CAPImagePickerViewDemoTests.m */; };
 		C393AF531D4B430200A916CB /* CAPImagePickerViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF521D4B430200A916CB /* CAPImagePickerViewDemoUITests.m */; };
-		C393AFA01D4B47C400A916CB /* AlbumAddBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C393AF861D4B47C400A916CB /* AlbumAddBtn@2x.png */; };
 		C393AFA11D4B47C400A916CB /* CAPImagePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF881D4B47C400A916CB /* CAPImagePickerView.m */; };
-		C393AFA21D4B47C400A916CB /* photo_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C393AF891D4B47C400A916CB /* photo_delete@2x.png */; };
 		C393AFA31D4B47C400A916CB /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF8C1D4B47C400A916CB /* TZAssetCell.m */; };
 		C393AFA41D4B47C400A916CB /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF8E1D4B47C400A916CB /* TZAssetModel.m */; };
 		C393AFA51D4B47C400A916CB /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C393AF901D4B47C400A916CB /* TZImageManager.m */; };
@@ -65,10 +63,8 @@
 		C393AF4E1D4B430200A916CB /* CAPImagePickerViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAPImagePickerViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C393AF521D4B430200A916CB /* CAPImagePickerViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAPImagePickerViewDemoUITests.m; sourceTree = "<group>"; };
 		C393AF541D4B430200A916CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C393AF861D4B47C400A916CB /* AlbumAddBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumAddBtn@2x.png"; sourceTree = "<group>"; };
 		C393AF871D4B47C400A916CB /* CAPImagePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPImagePickerView.h; sourceTree = "<group>"; };
 		C393AF881D4B47C400A916CB /* CAPImagePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPImagePickerView.m; sourceTree = "<group>"; };
-		C393AF891D4B47C400A916CB /* photo_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_delete@2x.png"; sourceTree = "<group>"; };
 		C393AF8B1D4B47C400A916CB /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
 		C393AF8C1D4B47C400A916CB /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
 		C393AF8D1D4B47C400A916CB /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
@@ -183,11 +179,9 @@
 		C393AF851D4B47C400A916CB /* CAPImagePickerView */ = {
 			isa = PBXGroup;
 			children = (
-				C393AF861D4B47C400A916CB /* AlbumAddBtn@2x.png */,
+				C393AF8A1D4B47C400A916CB /* TZImagePickerController */,
 				C393AF871D4B47C400A916CB /* CAPImagePickerView.h */,
 				C393AF881D4B47C400A916CB /* CAPImagePickerView.m */,
-				C393AF891D4B47C400A916CB /* photo_delete@2x.png */,
-				C393AF8A1D4B47C400A916CB /* TZImagePickerController */,
 				C393AF9E1D4B47C400A916CB /* TZTestCell.h */,
 				C393AF9F1D4B47C400A916CB /* TZTestCell.m */,
 			);
@@ -324,10 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C393AF3D1D4B430200A916CB /* LaunchScreen.storyboard in Resources */,
-				C393AFA01D4B47C400A916CB /* AlbumAddBtn@2x.png in Resources */,
 				C393AF3A1D4B430200A916CB /* Assets.xcassets in Resources */,
 				C393AFA61D4B47C400A916CB /* TZImagePickerController.bundle in Resources */,
-				C393AFA21D4B47C400A916CB /* photo_delete@2x.png in Resources */,
 				C393AF381D4B430200A916CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
