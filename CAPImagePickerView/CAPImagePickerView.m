@@ -22,12 +22,12 @@
 //cell宽高
 #define kItemWH     (_collectionView.frame.size.width - kMargin*(_lateralCount-1) - kInset*2) / _lateralCount
 
-@interface CAPImagePickerView ()<TZImagePickerControllerDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,UIImagePickerControllerDelegate,UIAlertViewDelegate>
+@interface CAPImagePickerView ()<TZImagePickerControllerDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIAlertViewDelegate>
 {
     NSMutableArray <id> *_selectedAssets;   //PHAsset or ALAsset
     BOOL _isSelectOriginalPhoto;
 }
-@property (nonatomic, strong) UIImagePickerController *imagePickerVc;
+@property (nonatomic) UIImagePickerController *imagePickerVc;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @end
 
