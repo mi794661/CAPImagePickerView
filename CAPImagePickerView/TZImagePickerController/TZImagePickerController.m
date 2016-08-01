@@ -391,7 +391,7 @@
     if (image) {
         return image;
     } else {
-        image = [UIImage imageNamed:[@"Frameworks/TZImagePickerController.framework/TZImagePickerController.bundle" stringByAppendingPathComponent:name]];
+        image = [UIImage imageNamed:[@"Frameworks/CAPImagePickerView.framework/TZImagePickerController.bundle" stringByAppendingPathComponent:name]];
         return image;
     }
 }
