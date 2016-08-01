@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name             = "CAPImagePickerView"  
-  s.version          = "1.0.6"  
+  s.version          = "1.0.7"  
   s.summary          = "Package from TZImagePickerController."  
   s.homepage         = "https://github.com/captain9911/CAPImagePickerView"  
   s.license          = "MIT"  
@@ -11,6 +11,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true  
   s.source_files = "CAPImagePickerView/*.{h,m}"
   s.resources    = "CAPImagePickerView/*.{png,xib,nib,bundle}" 
-  s.source_files = "CAPImagePickerView/TZImagePickerController/*.{h,m}"
-  s.resources    = "CAPImagePickerView/TZImagePickerController/*.{png,xib,nib,bundle}" 
+
+  s.subspec 'TZImagePickerController' do |ss|
+    ss.source_files = "CAPImagePickerView/TZImagePickerController/*.{h,m}"
+    ss.resources    = "CAPImagePickerView/TZImagePickerController/*.{png,xib,nib,bundle}"
+  end
 end  
