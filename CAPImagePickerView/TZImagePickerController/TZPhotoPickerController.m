@@ -27,6 +27,20 @@
 // Status bar height.
 #define  ST_StatusBarHeight      (ST_iPhoneX ? 44.f : 20.f)
 
+// Navigation bar height.
+#define  ST_NavigationBarHeight  44.f
+
+// Tabbar height.
+#define  ST_TabbarHeight         (ST_iPhoneX ? (49.f+34.f) : 49.f)
+
+// Tabbar safe bottom margin.
+#define  ST_TabbarSafeBottomMargin         (ST_iPhoneX ? 34.f : 0.f)
+
+// Status bar & navigation bar height.
+#define  ST_StatusBarAndNavigationBarHeight  (ST_iPhoneX ? 88.f : 64.f)
+
+#define ST_ViewSafeAreInsets(view) ({UIEdgeInsets insets; if(@available(iOS 11.0, *)) {insets = view.safeAreaInsets;} else {insets = UIEdgeInsetsZero;} insets;})
+
 @interface TZPhotoPickerController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIAlertViewDelegate> {
     NSMutableArray *_models;
     
@@ -164,7 +178,7 @@ static CGSize AssetGridThumbnailSize;
 
 - (void)configBottomToolBar {
     TZImagePickerController *tzImagePickerVc = (TZImagePickerController *)self.navigationController;
-    UIView *bottomToolBar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.tz_height - 50, self.view.tz_width, 50)];
+    UIView *bottomToolBar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.tz_height - 50 - ST_TabbarSafeBottomMargin, self.view.tz_width, 50 + ST_TabbarSafeBottomMargin)];
     CGFloat rgb = 253 / 255.0;
     bottomToolBar.backgroundColor = [UIColor colorWithRed:rgb green:rgb blue:rgb alpha:1.0];
     
