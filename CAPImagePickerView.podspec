@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name             = "CAPImagePickerView"  
-  s.version          = "1.1.1"  
+  s.version          = "1.1.2"  
   s.summary          = "Package from TZImagePickerController."  
   s.homepage         = "https://github.com/captain9911/CAPImagePickerView"  
   s.license          = "MIT"  
