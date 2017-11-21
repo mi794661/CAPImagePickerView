@@ -13,6 +13,32 @@
 #import "TZImagePickerController.h"
 #import "TZImageManager.h"
 
+//屏幕宽高
+#define kScreenWidth       [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight      [UIScreen mainScreen].bounds.size.height
+#define ST_keyWindow [[[UIApplication sharedApplication] delegate] window]
+
+// iPhone X
+#define  ST_iPhoneX (kScreenWidth == 375.f && kScreenHeight == 812.f ? YES : NO)
+
+//默认高度
+// Status bar height.
+#define  ST_StatusBarHeight      (ST_iPhoneX ? 44.f : 20.f)
+
+// Navigation bar height.
+#define  ST_NavigationBarHeight  44.f
+
+// Tabbar height.
+#define  ST_TabbarHeight         (ST_iPhoneX ? (49.f+34.f) : 49.f)
+
+// Tabbar safe bottom margin.
+#define  ST_TabbarSafeBottomMargin         (ST_iPhoneX ? 34.f : 0.f)
+
+// Status bar & navigation bar height.
+#define  ST_StatusBarAndNavigationBarHeight  (ST_iPhoneX ? 88.f : 64.f)
+
+#define ST_ViewSafeAreInsets(view) ({UIEdgeInsets insets; if(@available(iOS 11.0, *)) {insets = view.safeAreaInsets;} else {insets = UIEdgeInsetsZero;} insets;})
+
 @interface TZPhotoPreviewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate> {
     UICollectionView *_collectionView;
     BOOL _isHideNaviBar;
@@ -75,12 +101,12 @@
     _naviBar.backgroundColor = [UIColor colorWithRed:(34/255.0) green:(34/255.0)  blue:(34/255.0) alpha:1.0];
     _naviBar.alpha = 0.7;
     
-    _backButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 44, 44)];
+    _backButton = [[UIButton alloc] initWithFrame:CGRectMake(10, ST_StatusBarHeight/2, 44, 44)];
     [_backButton setImage:[UIImage imageNamedFromMyBundle:@"navi_back.png"] forState:UIControlStateNormal];
     [_backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     
-    _selectButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.tz_width - 54, 10, 42, 42)];
+    _selectButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.tz_width - 54, ST_StatusBarHeight/2, 42, 42)];
     [_selectButton setImage:[UIImage imageNamedFromMyBundle:@"photo_def_photoPickerVc.png"] forState:UIControlStateNormal];
     [_selectButton setImage:[UIImage imageNamedFromMyBundle:@"photo_sel_photoPickerVc.png"] forState:UIControlStateSelected];
     [_selectButton addTarget:self action:@selector(select:) forControlEvents:UIControlEventTouchUpInside];

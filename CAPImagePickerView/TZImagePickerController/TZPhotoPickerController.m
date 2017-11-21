@@ -15,6 +15,18 @@
 #import "TZImageManager.h"
 #import "TZVideoPlayerController.h"
 
+//屏幕宽高
+#define kScreenWidth       [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight      [UIScreen mainScreen].bounds.size.height
+#define ST_keyWindow [[[UIApplication sharedApplication] delegate] window]
+
+// iPhone X
+#define  ST_iPhoneX (kScreenWidth == 375.f && kScreenHeight == 812.f ? YES : NO)
+
+//默认高度
+// Status bar height.
+#define  ST_StatusBarHeight      (ST_iPhoneX ? 44.f : 20.f)
+
 @interface TZPhotoPickerController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIAlertViewDelegate> {
     NSMutableArray *_models;
     
@@ -111,7 +123,7 @@ static CGSize AssetGridThumbnailSize;
     layout.minimumInteritemSpacing = margin;
     layout.minimumLineSpacing = margin;
     CGFloat top = margin + 44;
-    if (iOS7Later) top += 20;
+    if (iOS7Later) top += ST_StatusBarHeight;
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(margin, top, self.view.tz_width - 2 * margin, self.view.tz_height - 50 - top) collectionViewLayout:layout];
     _collectionView.backgroundColor = [UIColor whiteColor];
     _collectionView.dataSource = self;

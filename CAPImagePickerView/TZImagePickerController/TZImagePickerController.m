@@ -14,6 +14,18 @@
 #import "UIView+Layout.h"
 #import "TZImageManager.h"
 
+//屏幕宽高
+#define kScreenWidth       [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight      [UIScreen mainScreen].bounds.size.height
+#define ST_keyWindow [[[UIApplication sharedApplication] delegate] window]
+
+// iPhone X
+#define  ST_iPhoneX (kScreenWidth == 375.f && kScreenHeight == 812.f ? YES : NO)
+
+//默认高度
+// Status bar height.
+#define  ST_StatusBarHeight      (ST_iPhoneX ? 44.f : 20.f)
+
 @interface TZImagePickerController () {
     NSTimer *_timer;
     UILabel *_tipLable;
@@ -327,7 +339,7 @@
         }
         if (!_tableView) {
             CGFloat top = 44;
-            if (iOS7Later) top += 20;
+            if (iOS7Later) top += ST_StatusBarHeight;
             _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, top, self.view.tz_width, self.view.tz_height - top) style:UITableViewStylePlain];
             _tableView.rowHeight = 70;
             _tableView.tableFooterView = [[UIView alloc] init];
