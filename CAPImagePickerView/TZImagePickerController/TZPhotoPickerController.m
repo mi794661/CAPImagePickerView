@@ -194,7 +194,7 @@ static CGSize AssetGridThumbnailSize;
     
     if (tzImagePickerVc.allowPickingOriginalPhoto) {
         _originalPhotoButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _originalPhotoButton.frame = CGRectMake(50, self.view.tz_height - 50, 130, 50);
+        _originalPhotoButton.frame = CGRectMake(50, self.view.tz_height - 50 - ST_TabbarSafeBottomMargin, 130, 50);
         _originalPhotoButton.imageEdgeInsets = UIEdgeInsetsMake(0, -8, 0, 0);
         _originalPhotoButton.contentEdgeInsets = UIEdgeInsetsMake(0, -45, 0, 0);
         [_originalPhotoButton addTarget:self action:@selector(originalPhotoButtonClick) forControlEvents:UIControlEventTouchUpInside];

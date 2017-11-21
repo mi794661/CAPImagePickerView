@@ -97,7 +97,7 @@
 }
 
 - (void)configCustomNaviBar {
-    _naviBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.tz_width, 64)];
+    _naviBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.tz_width, ST_StatusBarAndNavigationBarHeight)];
     _naviBar.backgroundColor = [UIColor colorWithRed:(34/255.0) green:(34/255.0)  blue:(34/255.0) alpha:1.0];
     _naviBar.alpha = 0.7;
     
